@@ -52,8 +52,24 @@ def rnm(fnm_dir,old_fnm, new_fnm):
 
   idx = idx[1::]
 
+flsan = []
+for i in flsa:
+    print i
+    flsan.append(i)
 
-
+if len(idx) >= 1:
+    print 'length of idx was >= 1.'
+    for g in range(len(flsa)):
+        print g, flsa[g]
+    print '****************************************'
+    for h in idx:
+        for i in range(len(flsa)):
+            #print flsa[i], oldformat[h-1], oldformat[h+1]
+            vart = find_between(flsa[i], oldformat[h-1], oldformat[h+1])
+            newstring = newformat
+            newstring[h] = vart
+            print vart, ''.join(newstring)
+            flsan[i] = ''.join(newstring)
 
 
 
