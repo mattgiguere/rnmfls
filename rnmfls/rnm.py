@@ -71,7 +71,15 @@ if len(idx) >= 1:
             print vart, ''.join(newstring)
             flsan[i] = ''.join(newstring)
 
-
+execute = 1
+for i in range(len(flsa)):
+    cmd = 'mv '+dir+flsa[i]+' '+dir+flsan[i]
+    if execute == 1:
+        print "Now executing: "+cmd
+        subprocess.call(cmd, shell=True)
+    else:
+        print cmd
+    
 
 
 if __name__ == '__main__':
