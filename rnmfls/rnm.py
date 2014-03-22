@@ -51,10 +51,10 @@ def rnm(fnm_dir,old_fnm, new_fnm):
         print "WARNING! var in new and old format must be in same location!"
 
   idx = idx[1::]
-
-flsan = []
-for i in flsa:
-    print i
+  
+  flsan = []
+  for i in flsa:
+  	print i
     flsan.append(i)
 
 if len(idx) >= 1:
