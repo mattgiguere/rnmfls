@@ -56,9 +56,8 @@ def rnm(fnm_dir,old_fnm, new_fnm):
   for i in flsa:
   	print i
     flsan.append(i)
-
-if len(idx) >= 1:
-    print 'length of idx was >= 1.'
+  if len(idx) >= 1:
+  	print 'length of idx was >= 1.'
     for g in range(len(flsa)):
         print g, flsa[g]
     print '****************************************'
